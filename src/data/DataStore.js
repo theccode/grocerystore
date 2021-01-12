@@ -1,4 +1,4 @@
 import { createStore } from "redux";
 import { ShopReducer } from "./ShopReducer";
 
-export const SportStoreDataStore = createStore(ShopReducer);
+export const GroceryStoreDataStore = createStore(ShopReducer);
