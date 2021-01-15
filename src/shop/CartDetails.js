@@ -19,7 +19,8 @@ export class CartDetails extends Component{
                     </tr>
                 </thead>
                 <tbody>
-                    <CartDetailsRows cart={this.props.cart}
+                    <CartDetailsRows 
+                    cart={this.props.cart}
                     cartPrice={this.props.cartPrice}
                     updateQuantity={this.props.updateCartQuantity}
                     removeFromCart={this.props.removeFromCart}/>
