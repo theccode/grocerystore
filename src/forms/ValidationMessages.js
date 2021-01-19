@@ -4,7 +4,7 @@ export const GetMessages = (elem) => {
         messages.push("Value required");
     }
     if (elem.validity.typeMismatch){
-        messages.push(`Invalid ${element.type}`)
+        messages.push(`Invalid ${elem.type}`)
     }
 
     return messages;
