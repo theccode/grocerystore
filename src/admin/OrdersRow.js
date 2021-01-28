@@ -12,7 +12,7 @@ export class OrdersRow extends Component {
                     <td>{this.props.order.name}</td>
                     <td>{this.props.order.email}</td>
                     <td className="text-right">{this.calcTotal(this.props.order.products)}</td>
-                    <td className="btn btn-sm btn-block bg-muted">{this.getShipping(this.props.order)}
+                    <td className="btn btn-sm btn-block bg-muted" onClick={this.props.toggleShipped}>{this.getShipping(this.props.order)}
                         <span>
                             {this.props.order.shipped ? " Shipped" : " Pending"}
                         </span>

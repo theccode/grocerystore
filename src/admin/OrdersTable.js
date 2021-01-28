@@ -15,10 +15,12 @@ export class OrdersTable extends Component {
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th className="text-right">Total</th>
                     <th className="text-center">Shipped</th>
                 </tr>
             </thead>
             <tbody>
+                {console.log(this.props.orders)}
                 { this.props.orders.map(order => 
                     <OrdersRow key={ order.id }
                     order={ order } 

@@ -17,12 +17,17 @@ for (let i = 1; i <= 503; i++){
 
 let orders = [];
 for (let i = 1; i <= 103; i++){
-    let fname = faker.name.firstName(); let sname = faker.name.lastName();
+    let fname = faker.name.firstName(); 
+    let sname = faker.name.lastName();
     let order = {
-        id: i, name: `${fname} ${sname}`,
-        email: faker.address.streetAddress(), city: faker.address.city(),
-        zip: faker.address.zipCode(), country: faker.address.country(),
-        shipped: faker.random.boolean(), products: []
+        id: i, 
+        name: `${fname} ${sname}`,
+        email: faker.internet.email(fname, sname), 
+        city: faker.address.city(),
+        zip: faker.address.zipCode(), 
+        country: faker.address.country(),
+        shipped: faker.random.boolean(), 
+        products: []
     }
     let productCount = faker.random.number({min:1, max:5});
     let product_ids = [];

@@ -16,7 +16,7 @@ const products = ({ category }, { db }) => ({
 
 const categories = (args, {db}) => db.get("categories").value();
 
-const resolveProducts = (product, db) => products.map(p => ({
+const resolveProducts = (products, db) => products.map(p => ({
     quantity: p.quantity, 
     product: product({id: p.product_id}, {db})
 }))
@@ -32,9 +32,9 @@ const resolveOrders = (onlyUnshipped, {page, pageSize, sort}, {db}) => {
     }));
 }
 
-const orders = ({onlyUnshiped = false}, {db}) => ({
+const orders = ({onlyUnshipped = false}, {db}) => ({
     totalSize: () => db.get("orders").filter(o => onlyUnshipped ? o.shipped === false: o).size().value(),
-    orders: (...args) => resolveOrders(onlyUnshiped, ...args)
+    orders: (...args) => resolveOrders(onlyUnshipped, ...args)
 })
 
 module.exports = {product, products, categories, orders}
