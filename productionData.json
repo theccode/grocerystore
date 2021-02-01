@@ -1,0 +1,16 @@
+{
+    "products": [
+        {"id": 1, "name": "Onion", "category": "Spices", "description": "Onion for a better aroma", "price": 275},
+        {"id": 2, "name": "Mango", "category": "Fruits", "description": "Succulent mango fruits for your daily snack", "price": 300},
+        {"id": 3, "name": "Tomato", "category": "Fruit", "description": "Tomato is a fruit:believe it or not", "price": 200},
+        {"id": 4, "name": "Rose Mary", "category": "Spices", "description": "Rose Mary for a better aroma", "price": 275},
+        {"id": 5, "name": "Bay leaf", "category": "Spices", "description": "Bay leaf for a better aroma", "price": 150},
+        {"id": 6, "name": "Nkontomire", "category": "Vegetables", "description": "Nkontomire for a better taste", "price": 250},
+        {"id": 7, "name": "Garlic", "category": "Spices", "description": "Garlic for a better aroma", "price": 270},
+        {"id": 8, "name": "Pear", "category": "Fruits", "description": "Pear to improve digestion ", "price": 600},
+        {"id": 9, "name": "Green Pepper", "category": "Vegetables", "description": "Green pepper for a better taste", "price": 100},
+        {"id": 10, "name": "Carbbage", "category": "Vegetables", "description": "Carbbage for a better taste", "price": 230}
+    ],
+    "categories": ["Fruits", "Vegetables", "Spices"],
+    "orders": []
+}
